@@ -40,7 +40,7 @@ public class escompany {
                 return;
         }
 
-        System.out.println("How many " + itemName + "s do you want to buy?");
+        System.out.println("Total product " + itemName + "s do you want to buy?");
         int quantity = scanner.nextInt();
         scanner.nextLine();
         if (quantity > itemStock) {
@@ -54,7 +54,7 @@ public class escompany {
         System.out.println("Quantity: " + quantity);
         System.out.println("Total price: $" + totalPrice);
 
-        System.out.println("Please enter your payment:");
+        System.out.println("Please enter your money:");
         double payment = scanner.nextDouble();
         scanner.nextLine();
         if (payment < totalPrice) {
@@ -63,7 +63,7 @@ public class escompany {
         }
 
         double change = payment - totalPrice;
-        System.out.println("Thank you for shopping with us!");
-        System.out.println("Your change is $" + change);
+        System.out.println("Thank you for shopping with us, please come back later!");
+        System.out.println("You change is $" + change);
     }
 }
